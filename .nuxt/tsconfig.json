@@ -62,6 +62,9 @@
       "assets": [
         "../assets"
       ],
+      "assets/*": [
+        "../assets/*"
+      ],
       "public": [
         "../public"
       ],
@@ -77,6 +80,9 @@
       "vue-demi": [
         "../node_modules/nuxt/dist/app/compat/vue-demi"
       ],
+      "#pwa": [
+        "../node_modules/@vite-pwa/nuxt/dist/runtime/composables/index"
+      ],
       "#vue-router": [
         "./vue-router-stub"
       ],
@@ -84,7 +90,7 @@
         "./imports"
       ],
       "#app-manifest": [
-        "./manifest/meta/d2fd5a54-37eb-46ed-a1a2-086e87bbbb14.json"
+        "./manifest/meta/dev"
       ],
       "#build": [
         "."
@@ -119,14 +125,14 @@
     "./nuxt.d.ts",
     "../.config/nuxt.*",
     "../**/*",
-    "../node_modules/@nuxt/devtools/runtime",
+    "../node_modules/@vite-pwa/nuxt/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
   "exclude": [
     "../node_modules",
     "../node_modules/nuxt/node_modules",
-    "../node_modules/@nuxt/devtools/runtime/server",
+    "../node_modules/@vite-pwa/nuxt/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"
