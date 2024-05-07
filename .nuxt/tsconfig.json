@@ -126,6 +126,7 @@
     "../.config/nuxt.*",
     "../**/*",
     "../node_modules/@vite-pwa/nuxt/runtime",
+    "../node_modules/nuxt-splide/runtime",
     "../node_modules/@nuxt/telemetry/runtime",
     ".."
   ],
@@ -133,6 +134,7 @@
     "../node_modules",
     "../node_modules/nuxt/node_modules",
     "../node_modules/@vite-pwa/nuxt/runtime/server",
+    "../node_modules/nuxt-splide/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "../dist",
     "../.output"

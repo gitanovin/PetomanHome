@@ -101,7 +101,14 @@ const _inlineRuntimeConfig = {
       }
     }
   },
-  "public": {}
+  "public": {
+    "splide": {
+      "theme": "default"
+    }
+  },
+  "splide": {
+    "theme": "default"
+  }
 };
 const envOptions = {
   prefix: "NITRO_",
