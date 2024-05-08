@@ -67,7 +67,8 @@ module.exports = {
         "sans-serif",
       ],
 
-      fa: ["iransans"]
+      fa: ["iransans"],
+      fas:["yekan-bakh-new"]
       
     },
     colors: {

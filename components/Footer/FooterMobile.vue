@@ -34,7 +34,7 @@
       </div>
     </div>
   </div>
-  <section class="mobile-side block lg:hidden">
+  <section class="mobile-side block hidden">
     <div class="h-screen w-full fixed right-0 top-0 z-20">
       <div class="backdrop bg-gray-100/50 w-full h-screen"></div>
       <div class="close absolute left-2 top-4">
