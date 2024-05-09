@@ -3,7 +3,7 @@
     <a
       href="https://twitter.com/intent/tweet?url="
       class="text-sm group-hover:text-black text-white"
-      ><i class="fa-brands fa-twitter"></i
+      ><i class="fa-brands fa-twitter text-white"></i
     ></a>
     <a
       class="text-sm group-hover:text-white text-white"
@@ -27,7 +27,7 @@
     <a
       href="https://wa.me/?text="
       class="text-sm group-hover:text-black text-white"
-      ><i class="fa-brands fa-telegram text-white"></i
+      ><i class="fa-brands fa-whatsapp text-white"></i
     ></a>
     <a
       href="https://www.linkedin.com/sharing/share-offsite/?url="

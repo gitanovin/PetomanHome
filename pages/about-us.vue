@@ -1,0 +1,18 @@
+<template>
+  <main class="font-iransans">
+    <div class="Hero isolate relative">
+      <HeaderDesktop />
+      <HeaderMobile />
+      <AboutUs />
+    </div>
+
+    <Footer />
+  </main>
+</template>
+<script setup>
+import HeaderDesktop from "@/components/Header/HeaderDesktop.vue";
+import HeaderMobile from "@/components/Header/HeaderMobile.vue";
+import AboutUs from "@/components/Pages/about.vue";
+
+import Footer from "@/components/Footer/Footer.vue";
+</script>

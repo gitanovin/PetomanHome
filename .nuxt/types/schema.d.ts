@@ -3,8 +3,9 @@ declare module 'nuxt/schema' {
   interface NuxtConfig {
     ["pwa"]?: typeof import("@vite-pwa/nuxt").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["splide"]?: typeof import("nuxt-splide").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
+    ["nuxtLeaflet"]?: typeof import("nuxt3-leaflet").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
     ["telemetry"]?: typeof import("@nuxt/telemetry").default extends NuxtModule<infer O> ? Partial<O> : Record<string, any>
-    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@vite-pwa/nuxt", Exclude<NuxtConfig["pwa"], boolean>] | ["nuxt-splide", Exclude<NuxtConfig["splide"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
+    modules?: (undefined | null | false | NuxtModule | string | [NuxtModule | string, Record<string, any>] | ["@vite-pwa/nuxt", Exclude<NuxtConfig["pwa"], boolean>] | ["nuxt-splide", Exclude<NuxtConfig["splide"], boolean>] | ["nuxt3-leaflet", Exclude<NuxtConfig["nuxtLeaflet"], boolean>] | ["@nuxt/telemetry", Exclude<NuxtConfig["telemetry"], boolean>])[],
   }
   interface RuntimeConfig {
    app: {

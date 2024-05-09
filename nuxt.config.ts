@@ -6,7 +6,8 @@ export default defineNuxtConfig({
   css: ['~/assets/css/app.css', '~/assets/css/icons.css'],
   modules: [
     '@vite-pwa/nuxt',
-    'nuxt-splide'
+    'nuxt-splide',
+    'nuxt3-leaflet'
   ],
   splide: {
     theme: 'default'

@@ -15,6 +15,7 @@
       aria-labelledby="modal-title"
       role="dialog"
       aria-modal="true"
+      v-if="InstallClose==true"
     >
 
       <div class="fixed inset-0 bg-white transition-opacity font-fas"></div>
@@ -66,7 +67,7 @@
 
           <div class="mt-0 block w-full max-w-lg">
             <button
-          
+          @click="InstallClose = false"
               type="button"
               class="inline-flex w-full justify-center rounded-2xl border border-orange-500 bg-white px-4 py-5 text-base font-medium text-orange-500 shadow-sm hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-orange-100 focus:ring-offset-2 sm:text-sm"
             >
@@ -95,7 +96,7 @@ export default{
  data() {
     return {
   
-      InstallClose: false,
+      InstallClose: true,
   
     };
   }

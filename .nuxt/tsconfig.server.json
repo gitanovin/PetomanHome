@@ -100,6 +100,7 @@
     "./types/nitro-nuxt.d.ts",
     "../node_modules/@vite-pwa/nuxt/runtime/server",
     "../node_modules/nuxt-splide/runtime/server",
+    "../node_modules/nuxt3-leaflet/runtime/server",
     "../node_modules/@nuxt/telemetry/runtime/server",
     "./types/nitro.d.ts",
     "../**/*",

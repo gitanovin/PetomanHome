@@ -14,8 +14,8 @@
             <div class="about-details">
               <div class="about-desc text-center font-fas">
                 <p>
-                  © هر گونه کپی&zwnj;برداری جزئی یا کلی از مطالب لینکو مگ بدون
-                  کسب مجوز مکتوب ممنوع است. حقوق این سایت به پتومن تعلق دارد.
+                  © هر گونه کپی&zwnj;برداری جزئی یا کلی از مطالب پتومن بدون کسب
+                  مجوز مکتوب ممنوع است. حقوق این سایت به پتومن تعلق دارد.
                 </p>
               </div>
 
@@ -47,11 +47,26 @@
           <p class="max-w-20 mx-auto">PETOMAN</p>
         </div>
         <ul class="flex flex-col space-y-6 p-4 font-semibold text-gray-700">
-          <li>خانه</li>
-          <li>قرارهای مهربانی</li>
-          <li>تماس با ما</li>
-          <li>درباره ما</li>
-          <li cl>ثبت نام حامیان جدید</li>
+          <li class="flex items-center"><nuxt-link to="/">خانه</nuxt-link></li>
+
+          <li class="flex items-center">
+            <nuxt-link to="/">همکاری با پتومن</nuxt-link>
+          </li>
+          <li class="flex items-center">
+            <nuxt-link to="/blog">بلاگ</nuxt-link>
+          </li>
+          <li class="flex items-center">
+            <nuxt-link to="/question">سوالات متداول</nuxt-link>
+          </li>
+          <li class="flex items-center">
+            <nuxt-link to="/about-us">درباره ما</nuxt-link>
+          </li>
+          <li class="flex items-center">
+            <nuxt-link to="/contact-us">تماس با ما</nuxt-link>
+          </li>
+          <li class="flex items-center">
+            <nuxt-link to="/terms">شرایط و ضوابط</nuxt-link>
+          </li>
         </ul>
       </div>
     </div>

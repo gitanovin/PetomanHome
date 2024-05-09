@@ -9,7 +9,7 @@
         </button>
         <button type="button" class="pwa text-sm flex items-center">
           <i class="fa fa-circle-down text-2xl text-orange-500"></i>
-          <span class="pr-2"> افزودن به صفحه اصلی </span>
+          <span class="pr-2"> افزودن به خانه </span>
         </button>
       </div>
 
