@@ -40,8 +40,8 @@
             >
               <span>اپلیکیشن پتومن</span>
               <i
-                class="fa fa-chevron-down w-3 h-3 rotate-180 shrink-0 text-orange-500"
-                :class="submenuIndex == 1 ? 'fa-chevron-down' : 'rotate-0'"
+                class="fa w-3 h-3 rotate-180 shrink-0 text-orange-500"
+                :class="submenuIndex == 1 ? 'fa-chevron-down' : 'fa-chevron-up'"
               ></i>
             </button>
           </h2>
@@ -68,8 +68,8 @@
             >
               <span> سرویس های پتومن</span>
               <i
-                class="fa fa-chevron-down w-3 h-3 rotate-180 shrink-0 text-orange-500"
-                :class="submenuIndex == 2 ? 'fa-chevron-down' : 'rotate-0'"
+                class="fa w-3 h-3 rotate-180 shrink-0 text-orange-500"
+                :class="submenuIndex == 2 ? 'fa-chevron-down' : 'fa-chevron-up'"
               ></i>
             </button>
           </h2>
@@ -97,8 +97,8 @@
             >
               <span>عضویت در پتومن</span>
               <i
-                class="fa fa-chevron-down w-3 h-3 rotate-180 shrink-0 text-orange-500"
-                :class="submenuIndex == 3 ? 'fa-chevron-down' : 'rotate-0'"
+                class="fa w-3 h-3 rotate-180 shrink-0 text-orange-500"
+                :class="submenuIndex == 3 ? 'fa-chevron-down' : 'fa-chevron-up'"
               ></i>
             </button>
           </h2>
