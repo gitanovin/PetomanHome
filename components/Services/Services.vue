@@ -11,7 +11,8 @@
       </div>
 
       <div class="grid lg:grid-cols-3 grid-cols-2 gap-4">
-        <div
+        <nuxt-link
+          to="https://hamian.petoman.com/"
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
         >
           <img
@@ -19,16 +20,13 @@
             class="p-2 w-full max-w-20 h-20 mx-auto"
           />
 
-          <a
-            href=""
-            class="focus:outline-none flex-col justify-center text-center"
-          >
+          <div class="focus:outline-none flex-col justify-center text-center">
             <p class="text-lg font-bold text-gray-900">حامیان</p>
             <p class="text-xs text-gray-500 pt-2">
               روزهای مهربانی،کمک به حیوانات...
             </p>
-          </a>
-        </div>
+          </div>
+        </nuxt-link>
 
         <div
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
