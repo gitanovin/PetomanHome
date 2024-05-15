@@ -107,7 +107,7 @@
 
 <script>
 import Header from "./Header/header.vue";
-import CollapseTransition from "/plugins/CollapseTransition.vue";
+import CollapseTransition from "/Module/CollapseTransition.vue";
 export default {
   components: {
     CollapseTransition,

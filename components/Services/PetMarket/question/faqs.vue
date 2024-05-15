@@ -1,34 +1,18 @@
 <template>
-  <section>
-    <Header />
-  </section>
+
   <section
-    class="relative py-16 bg-white/70 backdrop-blur-sm mt-8 rounded-t-3xl"
+    class="relative py-16 bg-gray-50 lg:px-0 px-4"
   >
     <div
-      class="w-full max-w-screen-xl mx-auto text-xl font-semibold pb-6 text-black font-fa"
+      class="w-full max-w-screen-xl mx-auto relative overflow-hidden flex items-center justify-center lg:justify-start lg:py-8  rounded-lg"
     >
-      <div
-        class="relative w-full transform lg:px-0 px-4 transition-all opacity-100 scale-100"
-      >
-        <div class="overflow-hidden rounded-lg bg-white border">
-          <div class="relative">
-            <input
-              class="block w-full appearance-none bg-transparent py-4 pl-4 pr-12 text-base text-slate-900 placeholder:text-slate-600 focus:outline-none sm:text-sm sm:leading-6 border-0"
-              placeholder="کلید واژه"
-              aria-label="Search components"
-              role="combobox"
-              type="text"
-              value=""
-            /><i
-              class="fa fa-search pointer-events-none absolute top-4 right-4 h-6 w-6 text-slate-400"
-            >
-            </i>
-          </div>
-        </div>
-      </div>
+      <header class="text-3xl font-semibold flex items-center text-blue-500">
+        <!-- <i class="fa fa-question pl-2"></i> -->
+        <h1>اجازه بدهید به سوالات متداول شما پاسخ بدهیم!</h1>
+      </header>
     </div>
-    <div class="w-full max-w-screen-xl mx-auto rounded-lg">
+
+    <div class="w-full max-w-screen-xl mx-auto rounded-lg lg:pt-0 pt-8">
       <ul class="space-y-2">
         <li>
           <h2 id="accordion-arrow-icon-heading-3">
@@ -36,11 +20,11 @@
               @click="openSubMenu(1)"
               :class="submenuIndex == 1 ? 'rounded-t-lg' : 'rounded-lg'"
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-orange-500 border border-gray-200 focus:ring-0 focus:ring-gray-200 gap-3 bg-white"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-blue-500 border border-gray-200 focus:ring-0 focus:ring-gray-200 gap-3 bg-white"
             >
               <span>اپلیکیشن پتومن</span>
               <i
-                class="fa w-3 h-3 rotate-180 shrink-0 text-orange-500"
+                class="fa w-3 h-3 rotate-180 shrink-0 text-blue-500"
                 :class="submenuIndex == 1 ? 'fa-chevron-down' : 'fa-chevron-up'"
               ></i>
             </button>
@@ -64,11 +48,11 @@
               @click="openSubMenu(2)"
               :class="submenuIndex == 2 ? 'rounded-t-lg' : 'rounded-lg'"
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-orange-500 border border-gray-200 focus:ring-0 focus:ring-gray-200 gap-3 bg-white"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-blue-500 border border-gray-200 focus:ring-0 focus:ring-gray-200 gap-3 bg-white"
             >
               <span> سرویس های پتومن</span>
               <i
-                class="fa w-3 h-3 rotate-180 shrink-0 text-orange-500"
+                class="fa w-3 h-3 rotate-180 shrink-0 text-blue-500"
                 :class="submenuIndex == 2 ? 'fa-chevron-down' : 'fa-chevron-up'"
               ></i>
             </button>
@@ -93,11 +77,11 @@
               @click="openSubMenu(3)"
               :class="submenuIndex == 3 ? 'rounded-t-lg' : 'rounded-lg'"
               type="button"
-              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-orange-500 border border-gray-200 focus:ring-0 focus:ring-gray-200 gap-3 bg-white"
+              class="flex items-center justify-between w-full p-5 font-medium rtl:text-right text-blue-500 border border-gray-200 focus:ring-0 focus:ring-gray-200 gap-3 bg-white"
             >
               <span>عضویت در پتومن</span>
               <i
-                class="fa w-3 h-3 rotate-180 shrink-0 text-orange-500"
+                class="fa w-3 h-3 rotate-180 shrink-0 text-blue-500"
                 :class="submenuIndex == 3 ? 'fa-chevron-down' : 'fa-chevron-up'"
               ></i>
             </button>
@@ -121,12 +105,10 @@
 </template>
 
 <script>
-import Header from "./Header/header.vue";
 import CollapseTransition from "/Module/CollapseTransition.vue";
 export default {
   components: {
     CollapseTransition,
-    Header,
   },
 
   data() {

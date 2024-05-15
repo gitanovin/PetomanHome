@@ -11,7 +11,7 @@
       </div>
 
       <div class="grid lg:grid-cols-3 grid-cols-2 gap-4">
-        <nuxt-link
+        <NuxtLink
           to="https://hamian.petoman.com/"
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
         >
@@ -26,9 +26,10 @@
               روزهای مهربانی،کمک به حیوانات...
             </p>
           </div>
-        </nuxt-link>
+</NuxtLink>
 
-        <div
+           <NuxtLink
+          to="/landing/market"
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
         >
           <img
@@ -36,16 +37,15 @@
             class="p-2 w-full max-w-20 h-20 mx-auto"
           />
 
-          <a
-            href=""
+          <div
             class="focus:outline-none flex-col justify-center text-center"
           >
             <p class="text-lg font-bold text-gray-900">پت مارکت</p>
             <p class="text-xs text-gray-500 pt-2">
               خرید از پت شاپ ها ، واگذاری پت...
             </p>
-          </a>
-        </div>
+          </div>
+       </NuxtLink>
 
         <div
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"

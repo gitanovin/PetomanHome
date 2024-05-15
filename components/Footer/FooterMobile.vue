@@ -1,6 +1,6 @@
 <template>
   <div
-    class="mx-auto max-w-screen-xl px-4 block lg:hidden border-t border-gray-100"
+    class="mx-auto max-w-screen-xl px-4 block lg:hidden border-t border-gray-100 py-6"
   >
     <div class="theme-widgetarea theme-widgetarea-full font-fa">
       <div class="bg-white rounded-lg mb-8 relative widget_blogmotive_mobile">
