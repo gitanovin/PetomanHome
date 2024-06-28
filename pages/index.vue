@@ -15,7 +15,7 @@
       aria-labelledby="modal-title"
       role="dialog"
       aria-modal="true"
-      v-if="InstallClose==true"
+      v-if="InstallClose == true"
     >
 
       <div class="fixed inset-0 bg-white transition-opacity font-fas"></div>
@@ -67,7 +67,7 @@
 
           <div class="mt-0 block w-full max-w-lg">
             <button
-          @click="InstallClose = false"
+          @click="closeInstallApp()"
               type="button"
               class="inline-flex w-full justify-center rounded-2xl border border-orange-500 bg-white px-4 py-5 text-base font-medium text-orange-500 shadow-sm hover:bg-orange-100 focus:outline-none focus:ring-2 focus:ring-orange-100 focus:ring-offset-2 sm:text-sm"
             >
@@ -79,7 +79,7 @@
     </div>
   </main>
 </template>
-<script>
+<script setup>
 import HeaderDesktop from "@/components/Header/HeaderDesktop.vue";
 import HeaderMobile from "@/components/Header/HeaderMobile.vue";
 import Hero from "@/components/Hero/Hero.vue";
@@ -89,16 +89,20 @@ import About from "@/components/About/About.vue";
 import News from "@/components/PetDanimApi/News.vue";
 import Footer from "@/components/Footer/Footer.vue";
 
-export default{
-    components: {
-    HeaderDesktop,HeaderMobile,Hero,Services,Slider,About,News,Footer
-  },
- data() {
-    return {
-  
-      InstallClose: true,
-  
-    };
-  }
+const installed = useCookie("installed" , false)
+
+const InstallClose = ref(installed.value == true ? false : true)
+
+const closeInstallApp = () => {
+  InstallClose.value = false
+  installed.value = true
 }
+
+// onMounted(() => {
+//   if(localStorage.getItem("installed")){
+//     InstallClose.value = false
+//   }else {
+//     InstallClose.value = true
+//   }
+// })
 </script>

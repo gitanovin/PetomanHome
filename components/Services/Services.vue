@@ -11,8 +11,9 @@
       </div>
 
       <div class="grid lg:grid-cols-3 grid-cols-2 gap-4">
-        <NuxtLink
-          to="https://hamian.petoman.com/"
+        <a
+          href="https://hamian.petoman.com"
+          target="_blank"
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
         >
           <img
@@ -26,10 +27,11 @@
               روزهای مهربانی،کمک به حیوانات...
             </p>
           </div>
-</NuxtLink>
+        </a>
 
-           <NuxtLink
-          to="/landing/market"
+        <a
+          href="javascript:void(0)"
+          @click="developAlert()"
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
         >
           <img
@@ -37,17 +39,17 @@
             class="p-2 w-full max-w-20 h-20 mx-auto"
           />
 
-          <div
-            class="focus:outline-none flex-col justify-center text-center"
-          >
+          <div class="focus:outline-none flex-col justify-center text-center">
             <p class="text-lg font-bold text-gray-900">پت مارکت</p>
             <p class="text-xs text-gray-500 pt-2">
               خرید از پت شاپ ها ، واگذاری پت...
             </p>
           </div>
-       </NuxtLink>
+        </a>
 
-        <div
+        <a
+          @click="developAlert()"
+          href="javascript:void(0)"
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
         >
           <img
@@ -55,18 +57,19 @@
             class="p-2 w-full max-w-20 mx-auto"
           />
 
-          <a
-            href=""
+          <div
             class="focus:outline-none flex-col justify-center text-center"
           >
             <p class="text-lg font-bold text-gray-900">پت چت</p>
             <p class="text-xs text-gray-500 pt-2">
               گپ و گفتگو با دوستداران حیوانات
             </p>
-          </a>
-        </div>
+          </div>
+        </a>
 
-        <div
+        <a
+          href="javascript:void(0)"
+          @click="developAlert()"
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
         >
           <img
@@ -74,16 +77,17 @@
             class="p-2 w-full max-w-20 h-20 mx-auto"
           />
 
-          <a
-            href=""
+          <div
             class="focus:outline-none flex-col justify-center text-center"
           >
             <p class="text-lg font-bold text-gray-900">دامپزشکی</p>
             <p class="text-xs text-gray-500 pt-2">مشاوره و درمان حیوانات</p>
-          </a>
-        </div>
+          </div>
+        </a>
 
-        <div
+        <a
+          href="javascript:void(0)"
+          @click="developAlert()"
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
         >
           <img
@@ -91,18 +95,19 @@
             class="p-2 w-full max-w-20 h-20 mx-auto"
           />
 
-          <a
-            href=""
+          <div
             class="focus:outline-none flex-col justify-center text-center"
           >
             <p class="text-lg font-bold text-gray-900">پت دانیم</p>
             <p class="text-xs text-gray-500 pt-2">
               دانستنی ها و اخبار روز حیوانات
             </p>
-          </a>
-        </div>
+          </div>
+        </a>
 
-        <div
+        <a
+          href="javascript:void(0)"
+          @click="developAlert()"
           class="relative rounded-2xl bg-white px-6 py-6 shadow-md shadow-slate-100 flex-1 justify-center text-center"
         >
           <img
@@ -110,17 +115,24 @@
             class="p-3 w-full max-w-20 h-20 mx-auto"
           />
 
-          <a
-            href=""
+          <div
             class="focus:outline-none flex-col justify-center text-center"
           >
             <p class="text-lg font-bold text-gray-900">پت فیلم</p>
             <p class="text-xs text-gray-500 pt-2">
               معرفی و تماشای فیلم و انیمیشن حیوانات
             </p>
-          </a>
-        </div>
+          </div>
+        </a>
+
+        
       </div>
     </div>
   </section>
 </template>
+
+<script setup>
+const developAlert = () => {
+  alert("سرویس در حال توسعه میباشد ...")
+}
+</script>
